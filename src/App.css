@@ -1,0 +1,348 @@
+:root {
+  --color1: white;
+  --color2: black;
+  --color3: #1e5b77;
+  --color4: #3ecdf0;
+  --color5: #4a4a49;
+  --color6: #ed904d;
+  --color7: #8cd8eb;
+  --color8: #9ec8d3;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  background-color: var(--color8);
+  font-family: sans-serif;
+  font-size: 15px;
+  color: var(--color2);
+}
+
+audio {
+  height: 30px;
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-volume-slider,
+audio::-webkit-media-controls-timeline {
+  filter: invert(1);
+}
+
+audio::-webkit-media-controls-play-button {
+  padding: 0px;
+}
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+  color: var(--color2);
+  text-shadow: none;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: var(--color1);
+}
+
+h1 {
+  font-size: 80px;
+  margin-bottom: 0;
+  padding-top: 75px;
+  margin-block-start: 0;
+  color: var(--color4);
+  text-shadow: 5px 3px var(--color3),
+    5px 0px rgba(1, 1, 1, 0.5);
+  display: inline-block;
+  text-align: center;
+}
+
+h2 {
+  font-size: 42px;
+  color: var(--color1);
+  text-shadow: 5px 3px rgba(131, 73, 35, 0.8);
+  font-family: sans-serif;
+}
+
+h3 {
+  font-size: 35px;
+  color: var(--color2);
+  text-align: left;
+  margin: 0;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+/* Ensure all project title elements have consistent font weight */
+h3 b,
+h3 b a,
+h3 .R,
+h3 .G,
+h3 .B,
+h3 div {
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+h3 span {
+  font-size: 15px;
+  float: right;
+  color: var(--color2);
+  font-weight: normal;
+  text-align: right;
+}
+
+h4 {
+  font-size: 25px;
+  font-weight: normal;
+  color: var(--color2);
+  margin-top: 0;
+  margin-bottom: 40px;
+  text-shadow:
+    -1px -1px 0 rgba(255, 255, 255, 0.1),
+    1px -1px 0 rgba(255, 255, 255, 0.1),
+    -1px 1px 0 rgba(255, 255, 255, 0.1),
+    1px 1px 0 rgba(255, 255, 255, 0.1),
+    5px 0px rgb(0, 171, 255, .4),
+    10px 1px rgb(255, 0, 0, .3),
+    15px 2px rgb(0, 255, 0, .2);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  font-size: 10px;
+  color: var(--color1);
+  margin-top: 40px;
+}
+
+.R:hover {
+  color: rgb(255, 0, 0);
+}
+
+.G:hover {
+  color: rgb(0, 255, 0);
+}
+
+.B:hover {
+  color: rgb(0, 0, 255);
+}
+
+.tiny {
+  font-size: 12px;
+  color: var(--color5);
+}
+
+.cover {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  background-color: var(--color8);
+}
+
+.cover::before {
+  background: linear-gradient(to bottom, rgba(30, 91, 119, 0) 0%, rgba(30, 91, 119, 0.3) 20%, var(--color3) 100%);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.header {
+  background-image: url("../images/bird._banner_big_2.png");
+  background-repeat: no-repeat;
+  background-size: fill;
+  background-position: center;
+  color: var(--color3);
+  min-width: 70%;
+  min-height: 400px;
+  margin: 0 auto 30px auto;
+  position: relative;
+  z-index: 2;
+}
+
+.links {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px 10px 0px 0px;
+  padding: 5px 5px 0px 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.link {
+  background-color: rgb(225, 225, 225);
+  margin: 0px 5px;
+  margin-bottom: 5px;
+  padding: 1px 3px;
+  color: var(--color2);
+  border-style: outset;
+  border-color: rgba(1, 1, 1, 0.5);
+  border-radius: 5px;
+  border-width: 2px;
+  font-size: 17px;
+  box-shadow: 3px 2px var(--color6);
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  height: 20px;
+  width: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 5px;
+}
+
+.url {
+  text-decoration: underline;
+  color: var(--color3);
+}
+
+.intro {
+  max-width: 50%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  transform: translateX(-50%);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  min-width: 300px;
+  border: solid var(--color7);
+  border-width: 6px 0px 0px 6px;
+  border-radius: 10px;
+  padding: 30px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  background-color: rgb(225, 225, 225);
+  color: var(--color2);
+  font-size: 20px;
+  text-align: justify;
+  box-shadow: 6px 6px var(--color6),
+    9px 9px 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-reflect: below 0px linear-gradient(transparent, rgba(255, 255, 255, 0.2));
+  position: relative;
+  z-index: 3;
+}
+
+.intro * {
+  margin: 10px;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  width: 80%;
+  padding-bottom: 10px;
+  position: relative;
+  z-index: 4;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.project {
+  min-width: 300px;
+  max-width: 600px;
+  margin: 10px;
+  background-color: rgb(225, 225, 225);
+  border: solid var(--color7);
+  border-width: 6px 0px 0px 6px;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 6px 6px var(--color6),
+    9px 9px 3px rgba(0, 0, 0, 0.3);
+}
+
+.projectDesc {
+  background-color: var(--color1);
+  color: var(--color2);
+  padding: 10px;
+  text-align: justify;
+  border-top-right-radius: 10px;
+}
+
+.projectContent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-row-gap: 10px;
+}
+
+.trackDesc {
+  text-align: left;
+  margin: 0 0 0 10px;
+}
+
+.main-content {
+  background-color: var(--color3);
+  width: 100%;
+  padding-top: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .sticky {
+    top: 0 !important;
+    border-radius: 0px 0px 10px 10px !important;
+  }
+}
+
+/* Styling for the sticky links component */
+.sticky-links {
+  width: auto !important;
+  height: auto !important;
+  position: fixed !important;
+}
+
+#audio-visualizer-left,
+#audio-visualizer-right {
+  position: fixed;
+  width: 100vh;
+  height: 16vw;
+  z-index: -2;
+  pointer-events: none;
+}
+
+#audio-visualizer-left {
+  left: 8vw;
+  transform: translateY(-50%) rotate(90deg);
+  transform-origin: center left;
+}
+
+#audio-visualizer-left canvas {
+  transform: scaleX(-1)
+}
+
+#audio-visualizer-right {
+  right: 8vw;
+  transform: translateY(-50%) rotate(-90deg);
+  transform-origin: center right;
+}
