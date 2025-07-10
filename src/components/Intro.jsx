@@ -16,12 +16,16 @@ export default function Intro() {
 				</div>
 				<div>
 					<h3 style={{ fontSize: '25px' }}>The greatest hits</h3>
-					{greatestHits.map((track, index) => (
-						<AudioPlayer
-							key={index}
-							src={track.path}
-						/>
-					))}
+					{greatestHits.map((track, index) => {
+						const filename = track.path.split('/').pop().replace(/\.[^/.]+$/, '');
+						return (
+							<AudioPlayer
+								key={index}
+								src={track.path}
+								description={filename}
+							/>
+						);
+					})}
 				</div>
 			</div>
 			<br />
