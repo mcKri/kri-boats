@@ -1,15 +1,15 @@
-import * as React from 'react';
+import { useRef, useEffect } from 'react';
 
 export default function AudioVisualizer() {
-	const visualizerLeftRef = React.useRef(null);
-	const visualizerRightRef = React.useRef(null);
-	const audioMotionLeftRef = React.useRef(null);
-	const audioMotionRightRef = React.useRef(null);
-	const sharedAudioContextRef = React.useRef(null);
-	const connectedAudioElementsRef = React.useRef(new Set());
-	const audioElementsRef = React.useRef(new Set());
+	const visualizerLeftRef = useRef(null);
+	const visualizerRightRef = useRef(null);
+	const audioMotionLeftRef = useRef(null);
+	const audioMotionRightRef = useRef(null);
+	const sharedAudioContextRef = useRef(null);
+	const connectedAudioElementsRef = useRef(new Set());
+	const audioElementsRef = useRef(new Set());
 
-	React.useEffect(() => {
+	useEffect(() => {
 		const initializeVisualizers = async () => {
 			try {
 				const { default: AudioMotionAnalyzer } = await import('audiomotion-analyzer');

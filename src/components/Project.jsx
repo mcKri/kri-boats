@@ -2,11 +2,11 @@ import AudioPlayer from './AudioPlayer';
 
 export default function Project({ title, date, description, tracks, link, hasBreak }) {
 	return (
-		<div className="project">
+		<div className="project" >
 			<h3>
 				<b>
 					{link ? (
-						<a href={link} target="_blank" rel="noopener noreferrer">{title}</a>
+						<a href={link} class="url" target="_blank" rel="noopener noreferrer">{title}</a>
 					) : (
 						title
 					)}

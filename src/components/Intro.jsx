@@ -1,12 +1,8 @@
 import AudioPlayer from './AudioPlayer';
+import { getGreatestHits } from '../utils/trackUtils';
 
 export default function Intro() {
-	const greatestHits = [
-		{ src: 'music/240919_wrrr.wav', description: '' },
-		{ src: "music/221022_the.wav", description: "" },
-		{ src: "music/241227_s.wav", description: "" },
-		{ src: "music/bang.wav", description: "", loop: false }
-	];
+	const greatestHits = getGreatestHits();
 
 	return (
 		<>
@@ -21,16 +17,10 @@ export default function Intro() {
 				<div>
 					<h3 style={{ fontSize: '25px' }}>The greatest hits</h3>
 					{greatestHits.map((track, index) => (
-						<div key={index}>
-							<audio
-								controls
-								preload="auto"
-								src={track.src}
-								loop={track.loop === undefined ? true : track.loop}
-								crossOrigin="anonymous"
-							></audio>
-							<br />
-						</div>
+						<AudioPlayer
+							key={index}
+							src={track.path}
+						/>
 					))}
 				</div>
 			</div>

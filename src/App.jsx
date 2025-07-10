@@ -12,7 +12,6 @@ export default function App() {
   useEffect(() => {
     const initVanta = () => {
       if (coverRef.current) {
-        console.log('Initializing VANTA birds effect...');
         if (window.VANTA && window.VANTA.BIRDS) {
           const vantaEffect = window.VANTA.BIRDS({
             el: coverRef.current,
@@ -34,24 +33,8 @@ export default function App() {
             backgroundAlpha: 0.00,
           });
 
-          console.log('VANTA effect created:', vantaEffect);
-
-          // Debug: Check if canvas was created
-          setTimeout(() => {
-            const canvas = coverRef.current.querySelector('canvas');
-            console.log('Canvas found:', canvas);
-            if (canvas) {
-              console.log('Canvas dimensions:', canvas.width, 'x', canvas.height);
-              console.log('Canvas style:', canvas.style.cssText);
-            }
-          }, 500);
-
           vantaRef.current = vantaEffect;
-        } else {
-          console.log('VANTA.BIRDS not available');
         }
-      } else {
-        console.log('Cover ref not available');
       }
     };
 
@@ -62,9 +45,41 @@ export default function App() {
     return () => {
       clearTimeout(timer);
       if (vantaRef.current) {
-        console.log('Destroying VANTA effect');
         vantaRef.current.destroy();
       }
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      // Find all h2 elements and apply rotation effect
+      const h2Elements = document.querySelectorAll('h2');
+
+      h2Elements.forEach((h2) => {
+        // Calculate mouse position relative to viewport center
+        const mouseX = e.clientX - window.innerWidth / 2;
+        const mouseY = e.clientY - window.innerHeight / 2;
+
+        // Calculate rotation values (limit to small angles)
+        const maxRotation = 50; // Increased for stronger effect
+        const rotateX = (mouseY / window.innerHeight) * maxRotation * -1;
+        const rotateY = (mouseX / window.innerWidth) * maxRotation;
+
+        // Apply transform
+        h2.style.transform = `
+          perspective(1000px) 
+          rotateX(${rotateX}deg) 
+          rotateY(${rotateY}deg)
+        `;
+      });
+    };
+
+    // Add event listener
+    document.addEventListener('mousemove', handleMouseMove);
+
+    // Cleanup
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove);
     };
   }, []);
 

@@ -1,0 +1,152 @@
+{
+	"240919_wrrr.wav": {
+		"description": "",
+		"loop": true,
+		"project": "personal"
+	},
+	"221022_the.wav": {
+		"description": "",
+		"loop": true,
+		"project": "personal"
+	},
+	"241227_s.wav": {
+		"description": "",
+		"loop": true,
+		"project": "personal"
+	},
+	"bang.wav": {
+		"description": "",
+		"loop": false,
+		"project": "personal"
+	},
+	"courtyard2.wav": {
+		"description": "",
+		"loop": true,
+		"project": "personal"
+	},
+	"moonthly banjo kazooie.wav": {
+		"description": "--bango mango--",
+		"loop": true,
+		"project": "personal"
+	},
+	"boulder/thign2.ogg": {
+		"description": "Music for the extremely difficult final levels",
+		"loop": true,
+		"project": "boulder"
+	},
+	"boulder/thing3.ogg": {
+		"description": "Gameplay music for the first couple levels",
+		"loop": true,
+		"project": "boulder"
+	},
+	"boulder/uh.ogg": {
+		"description": "Menu music",
+		"loop": true,
+		"project": "boulder"
+	},
+	"car/vrr.wav": {
+		"description": "One of the tracks that would play on the car radio.",
+		"loop": true,
+		"project": "car"
+	},
+	"cross boss/biz.mp3": {
+		"description": "Breakroom music for quiet dialog sections in between minigames.",
+		"loop": true,
+		"project": "cross-boss"
+	},
+	"cross boss/main theme OMEGAFINISHED.mp3": {
+		"description": "The Main Theme for the game! This was very fun to make because it really made me think about the whole vibe for the project.",
+		"loop": true,
+		"project": "cross-boss"
+	},
+	"fruit salad/beeps.wav": {
+		"description": "Gameplay music after you cross a certain score and start popping off.",
+		"loop": true,
+		"project": "fruit-salad"
+	},
+	"fruit salad/something.wav": {
+		"description": "Initial gameplay music.",
+		"loop": true,
+		"project": "fruit-salad"
+	},
+	"fruit salad/uhh.wav": {
+		"description": "Menu music.",
+		"loop": true,
+		"project": "fruit-salad"
+	},
+	"justice realms/blue fight.ogg": {
+		"description": "Combat music for the Blue Zone, a weird place.",
+		"loop": true,
+		"project": "justice-realms"
+	},
+	"justice realms/gog fight+.ogg": {
+		"description": "",
+		"loop": true,
+		"project": "justice-realms"
+	},
+	"justice realms/green fight.ogg": {
+		"description": "Combat music for the Green Zone, which is green. Flutes are mandatory in Green Zones.",
+		"loop": true,
+		"project": "justice-realms"
+	},
+	"justice realms/queen of hearts+.ogg": {
+		"description": "Boss battle music for the Queen of Hearts.",
+		"loop": true,
+		"project": "justice-realms"
+	},
+	"rgb/220620_uhh.mp3": {
+		"description": "",
+		"loop": true,
+		"project": "rgb"
+	},
+	"rgb/220629_beep.flac": {
+		"description": "--combat music--",
+		"loop": true,
+		"project": "rgb"
+	},
+	"rgb/220824_evil.mp3": {
+		"description": "Evil vampire man dialogue music",
+		"loop": true,
+		"project": "rgb"
+	},
+	"rgb/220920_dink.wav": {
+		"description": "--shop--",
+		"loop": true,
+		"project": "rgb"
+	},
+	"rgb/220924_boss.flac": {
+		"description": "--boss fight--",
+		"loop": true,
+		"project": "rgb"
+	},
+	"roomba/r.wav": {
+		"description": "a music.",
+		"loop": true,
+		"project": "roomba"
+	},
+	"sunfall/lab_past.ogg": {
+		"description": "(past/light version)",
+		"loop": true,
+		"project": "sunfall"
+	},
+	"sunfall/lab_present.ogg": {
+		"description": "The present/dark version of the Lab, the intro area to the game.",
+		"loop": true,
+		"project": "sunfall"
+	},
+	"sunfall/thing_2.wav": {
+		"description": "(unused track)",
+		"loop": true,
+		"project": "sunfall"
+	},
+	"sunfall/town_past.ogg": {
+		"description": "The light version of the town music, where most of the quests take place!",
+		"loop": true,
+		"project": "sunfall"
+	},
+	"sunfall/town_present.ogg": {
+		"description": "",
+		"loop": true,
+		"project": "sunfall"
+	}
+}
