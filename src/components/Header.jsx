@@ -3,22 +3,22 @@ import { useEffect, useRef } from 'react';
 // Shared link data
 const linkData = [
 	{
-		icon: 'icons/discord.svg',
+		icon: '/icons/discord.svg',
 		text: 'kri_real',
 		url: null
 	},
 	{
-		icon: 'icons/bluesky.svg',
+		icon: '/icons/bluesky.svg',
 		text: '@kri.boats',
 		url: 'https://bsky.app/profile/kri.boats'
 	},
 	{
-		icon: 'icons/twitter.svg',
+		icon: '/icons/twitter.svg',
 		text: '@kri_boats',
 		url: 'https://twitter.com/kri_boats'
 	},
 	{
-		icon: 'icons/email.svg',
+		icon: '/icons/email.svg',
 		text: 'kri.boats@gmail.com',
 		url: 'mailto:kri.boats@gmail.com'
 	}
@@ -109,7 +109,7 @@ function StickyLinks() {
 
 export default function Header() {
 	const handleQuackClick = () => {
-		const audio = new Audio('quack.mp3');
+		const audio = new Audio('/quack.mp3');
 		audio.currentTime = 0;
 		audio.play();
 	};

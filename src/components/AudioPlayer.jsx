@@ -9,8 +9,8 @@ export default function AudioPlayer({ src, description, loop }) {
 	const trackDescription = description !== undefined ? description : (trackData ? trackData.description : '');
 	const trackLoop = loop !== undefined ? loop : (trackData ? trackData.loop : true);
 
-	// Construct the full path with music/ prefix
-	const fullPath = `music/${src}`;
+	// Construct the full path with /music/ prefix for public folder assets
+	const fullPath = `/music/${src}`;
 
 	return (
 		<div className="audio-player">

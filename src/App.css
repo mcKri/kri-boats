@@ -142,7 +142,7 @@ a:hover {
 }
 
 .header {
-  background-image: url("../images/bird._banner_big_2.png");
+  background-image: url("/images/bird._banner_big_2.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
