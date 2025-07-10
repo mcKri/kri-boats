@@ -80,9 +80,7 @@ export default function ProjectList() {
 			link: null,
 			description: (
 				<>
-					<span className="R">Please </span>
-					<span className="G">be </span>
-					<span className="B">patient.</span>
+					An idea I like too much to let go of, but requires me to finish my training arc first.
 				</>
 			),
 			tracks: [

@@ -1,4 +1,5 @@
 import { getTrackData } from '../utils/trackUtils';
+import './AudioPlayer.css';
 
 export default function AudioPlayer({ src, description, loop }) {
 	// Get track data from the database if not provided as props
@@ -12,15 +13,17 @@ export default function AudioPlayer({ src, description, loop }) {
 	const fullPath = `music/${src}`;
 
 	return (
-		<div>
+		<div className="audio-player">
+			{trackDescription && <p className="trackDesc">{trackDescription}</p>}
 			<audio
 				controls
+				controlsList="nodownload nofullscreen noremoteplayback noplaybackrate"
+				disablePictureInPicture
 				src={fullPath}
 				loop={trackLoop}
 				preload="auto"
 				crossOrigin="anonymous"
 			></audio>
-			{trackDescription && <p className="trackDesc">{trackDescription}</p>}
 		</div>
 	)
 }

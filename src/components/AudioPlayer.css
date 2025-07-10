@@ -1,0 +1,69 @@
+/* ===== AUDIO PLAYER STYLES ===== */
+.audio-player {
+	margin: 10px 0;
+}
+
+.audio-player audio {
+	height: 30px;
+}
+
+/* ===== WEBKIT AUDIO CONTROLS STYLING ===== */
+/* Main controls appearance */
+.audio-player audio::-webkit-media-controls-play-button,
+.audio-player audio::-webkit-media-controls-mute-button,
+.audio-player audio::-webkit-media-controls-volume-slider,
+.audio-player audio::-webkit-media-controls-timeline {
+	filter: invert(1);
+}
+
+.audio-player audio::-webkit-media-controls-play-button {
+	padding: 0px;
+}
+
+.audio-player audio::-webkit-media-controls-current-time-display,
+.audio-player audio::-webkit-media-controls-time-remaining-display {
+	color: var(--color2);
+	text-shadow: none;
+}
+
+.audio-player audio::-webkit-media-controls-panel {
+	background-color: var(--color1);
+}
+
+/* ===== HIDE UNWANTED CONTROLS ===== */
+/* Hide all overflow/menu/download buttons */
+.audio-player audio::-webkit-media-controls-overflow-button,
+.audio-player audio::-webkit-media-controls-overflow-menu-button,
+.audio-player audio::-webkit-media-controls-download-button,
+.audio-player audio::-webkit-media-controls-more-button,
+.audio-player audio::-webkit-media-controls-toggle-closed-captions-button,
+.audio-player audio::-webkit-media-controls-picture-in-picture-button,
+.audio-player audio::-webkit-media-controls-cast-button {
+	display: none !important;
+	visibility: hidden !important;
+	width: 0 !important;
+	height: 0 !important;
+}
+
+/* Hide overflow menu containers */
+.audio-player audio::-webkit-media-controls-overlay-enclosure {
+	display: none !important;
+}
+
+/* Hide last child of control panel (usually overflow button) */
+.audio-player audio::-webkit-media-controls-panel>*:last-child {
+	display: none !important;
+}
+
+/* Fallback for nested overflow buttons */
+.audio-player audio::-webkit-media-controls-enclosure audio::-webkit-media-controls-panel audio::-webkit-media-controls-overflow-button {
+	display: none !important;
+}
+
+/* ===== TRACK DESCRIPTION STYLING ===== */
+.audio-player .trackDesc {
+	text-align: left;
+	margin: 0 0 8px 10px;
+	font-size: 16px;
+	color: var(--color2);
+}
