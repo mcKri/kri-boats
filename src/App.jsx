@@ -1,4 +1,4 @@
-import * as React from 'react';
+import { useEffect, useRef } from 'react';
 import Header from './components/Header';
 import Intro from './components/Intro';
 import ProjectList from './components/ProjectList';
@@ -6,10 +6,10 @@ import AudioVisualizer from './components/AudioVisualizer.jsx';
 import './App.css'
 
 export default function App() {
-  const vantaRef = React.useRef(null);
-  const coverRef = React.useRef(null);
+  const vantaRef = useRef(null);
+  const coverRef = useRef(null);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const initVanta = () => {
       if (coverRef.current) {
         console.log('Initializing VANTA birds effect...');
@@ -70,12 +70,12 @@ export default function App() {
 
   return (
     <div className="App">
-      {/* <AudioVisualizer /> */}
-
       <div className="cover" id="cover" ref={coverRef}>
         <Header />
         <Intro />
       </div>
+
+      <div className="main-content-background"></div>
 
       <div className="main-content">
         <h2>projects</h2>
@@ -83,6 +83,8 @@ export default function App() {
 
         <footer>i made this</footer>
       </div>
+
+      <AudioVisualizer />
     </div>
   )
 }

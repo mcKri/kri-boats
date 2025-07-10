@@ -1,10 +1,10 @@
-import * as React from 'react';
+import { useEffect, useRef } from 'react';
 
 function StickyLinks() {
-	const linksRef = React.useRef(null);
-	const originalOffsetTop = React.useRef(null);
+	const linksRef = useRef(null);
+	const originalOffsetTop = useRef(null);
 
-	React.useEffect(() => {
+	useEffect(() => {
 		const handleScroll = () => {
 			if (linksRef.current) {
 				// Store the original offset position on first run

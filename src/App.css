@@ -1,3 +1,4 @@
+/* ===== CSS VARIABLES ===== */
 :root {
   --color1: white;
   --color2: black;
@@ -9,6 +10,7 @@
   --color8: #9ec8d3;
 }
 
+/* ===== GLOBAL STYLES ===== */
 body,
 html {
   width: 100%;
@@ -28,39 +30,14 @@ body {
   color: var(--color2);
 }
 
-audio {
-  height: 30px;
-}
-
-audio::-webkit-media-controls-play-button,
-audio::-webkit-media-controls-mute-button,
-audio::-webkit-media-controls-volume-slider,
-audio::-webkit-media-controls-timeline {
-  filter: invert(1);
-}
-
-audio::-webkit-media-controls-play-button {
-  padding: 0px;
-}
-
-audio::-webkit-media-controls-current-time-display,
-audio::-webkit-media-controls-time-remaining-display {
-  color: var(--color2);
-  text-shadow: none;
-}
-
-audio::-webkit-media-controls-panel {
-  background-color: var(--color1);
-}
-
+/* ===== TYPOGRAPHY ===== */
 h1 {
   font-size: 80px;
   margin-bottom: 0;
   padding-top: 75px;
   margin-block-start: 0;
   color: var(--color4);
-  text-shadow: 5px 3px var(--color3),
-    5px 0px rgba(1, 1, 1, 0.5);
+  text-shadow: 5px 3px var(--color3), 5px 0px rgba(1, 1, 1, 0.5);
   display: inline-block;
   text-align: center;
 }
@@ -81,14 +58,14 @@ h3 {
   font-weight: 500;
 }
 
-/* Ensure all project title elements have consistent font weight */
+/* Project title styling - consolidated */
 h3 b,
 h3 b a,
 h3 .R,
 h3 .G,
 h3 .B,
 h3 div {
-  font-weight: 600;
+  font-weight: 700;
   font-family: sans-serif;
 }
 
@@ -116,20 +93,23 @@ h4 {
     15px 2px rgb(0, 255, 0, .2);
 }
 
+/* ===== LINKS ===== */
 a {
   text-decoration: none;
+  color: var(--color3);
 }
 
 a:hover {
   text-decoration: underline;
 }
 
-footer {
-  font-size: 10px;
-  color: var(--color1);
-  margin-top: 40px;
+.url {
+  text-decoration: underline;
+  color: var(--color3);
 }
 
+/* ===== INTERACTIVE ELEMENTS ===== */
+/* RGB hover effects */
 .R:hover {
   color: rgb(255, 0, 0);
 }
@@ -142,11 +122,33 @@ footer {
   color: rgb(0, 0, 255);
 }
 
-.tiny {
-  font-size: 12px;
-  color: var(--color5);
+/* ===== AUDIO CONTROLS ===== */
+audio {
+  height: 30px;
 }
 
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-volume-slider,
+audio::-webkit-media-controls-timeline {
+  filter: invert(1);
+}
+
+audio::-webkit-media-controls-play-button {
+  padding: 0px;
+}
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+  color: var(--color2);
+  text-shadow: none;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: var(--color1);
+}
+
+/* ===== LAYOUT COMPONENTS ===== */
 .cover {
   display: block;
   position: relative;
@@ -181,6 +183,29 @@ footer {
   z-index: 2;
 }
 
+.App {
+  position: relative;
+}
+
+.main-content-background {
+  background-color: #1e5b77;
+  position: absolute;
+  top: 100vh;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.main-content {
+  width: 100%;
+  padding-top: 20px;
+  position: relative;
+  z-index: 3;
+}
+
+/* ===== NAVIGATION LINKS ===== */
 .links {
   display: inline-flex;
   flex-direction: row;
@@ -197,8 +222,7 @@ footer {
 
 .link {
   background-color: rgb(225, 225, 225);
-  margin: 0px 5px;
-  margin-bottom: 5px;
+  margin: 0px 5px 5px 5px;
   padding: 1px 3px;
   color: var(--color2);
   border-style: outset;
@@ -220,11 +244,21 @@ footer {
   margin-right: 5px;
 }
 
-.url {
-  text-decoration: underline;
-  color: var(--color3);
+/* Sticky navigation */
+.sticky-links {
+  width: auto !important;
+  height: auto !important;
+  position: fixed !important;
 }
 
+@media (min-width: 768px) {
+  .sticky {
+    top: 0 !important;
+    border-radius: 0px 0px 10px 10px !important;
+  }
+}
+
+/* ===== CONTENT SECTIONS ===== */
 .intro {
   max-width: 50%;
   display: grid;
@@ -237,15 +271,12 @@ footer {
   border: solid var(--color7);
   border-width: 6px 0px 0px 6px;
   border-radius: 10px;
-  padding: 30px;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding: 30px 30px 7px 30px;
   background-color: rgb(225, 225, 225);
   color: var(--color2);
   font-size: 20px;
   text-align: justify;
-  box-shadow: 6px 6px var(--color6),
-    9px 9px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 6px 6px var(--color6), 9px 9px 3px rgba(0, 0, 0, 0.3);
   -webkit-box-reflect: below 0px linear-gradient(transparent, rgba(255, 255, 255, 0.2));
   position: relative;
   z-index: 3;
@@ -255,6 +286,7 @@ footer {
   margin: 10px;
 }
 
+/* ===== PROJECTS SECTION ===== */
 .projects {
   display: flex;
   justify-content: center;
@@ -277,8 +309,7 @@ footer {
   border-width: 6px 0px 0px 6px;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 6px 6px var(--color6),
-    9px 9px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 6px 6px var(--color6), 9px 9px 3px rgba(0, 0, 0, 0.3);
 }
 
 .projectDesc {
@@ -300,35 +331,15 @@ footer {
   margin: 0 0 0 10px;
 }
 
-.main-content {
-  background-color: var(--color3);
-  width: 100%;
-  padding-top: 20px;
-  position: relative;
-  z-index: 1;
-}
-
-@media (min-width: 768px) {
-  .sticky {
-    top: 0 !important;
-    border-radius: 0px 0px 10px 10px !important;
-  }
-}
-
-/* Styling for the sticky links component */
-.sticky-links {
-  width: auto !important;
-  height: auto !important;
-  position: fixed !important;
-}
-
+/* ===== AUDIO VISUALIZERS ===== */
 #audio-visualizer-left,
 #audio-visualizer-right {
   position: fixed;
   width: 100vh;
   height: 16vw;
-  z-index: -2;
+  z-index: 2;
   pointer-events: none;
+  top: 0%;
 }
 
 #audio-visualizer-left {
@@ -338,11 +349,23 @@ footer {
 }
 
 #audio-visualizer-left canvas {
-  transform: scaleX(-1)
+  transform: scaleX(-1);
 }
 
 #audio-visualizer-right {
   right: 8vw;
   transform: translateY(-50%) rotate(-90deg);
   transform-origin: center right;
+}
+
+/* ===== UTILITY CLASSES ===== */
+.tiny {
+  font-size: 12px;
+  color: var(--color5);
+}
+
+footer {
+  font-size: 10px;
+  color: var(--color1);
+  margin-top: 40px;
 }
