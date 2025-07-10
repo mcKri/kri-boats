@@ -10,10 +10,10 @@ export default function Intro() {
 			<div className="intro">
 				<div>
 					<p>
-						<span style={{ fontSize: '22px', color: 'var(--color3)', textShadow: '1px 1px 2px rgba(0,0,0,0.1)' }}>hey i'm kri,</span><br /><br />
-						I've been a long-time musician and a some-time hobbyist game dev.<br /><br />
-						Combining these two interests has been the most fun in the world!<br />
-						I made this page to showcase stuff I'm proud of, even if I haven't really finished a project of my own yet.<br />
+						<span style={{ fontSize: '22px', color: 'var(--color3)', textShadow: '1px 1px 2px rgba(0,0,0,0.1)' }}>hi i'm kri,</span><br /><br />
+						I'm a long-time musician, some-time hobbyist game dev.<br />
+						Combining these two interests has been the most fun in the world!<br /><br />
+						I made this page to showcase stuff I'm proud of, even if I haven't really finished a full project of my own yet.<br />
 						<small style={{ fontSize: '14px', color: 'var(--color5)', fontStyle: 'italic' }}>
 							(i hope to expand this place with more dev-related stuff in the future)
 						</small><br /><br />
