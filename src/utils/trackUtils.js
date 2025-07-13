@@ -36,10 +36,10 @@ export function getAllTracks() {
 export function getGreatestHits() {
 	// Return specific tracks that are considered greatest hits
 	const greatestHitsPaths = [
-		'240919_wrrr.wav',
-		'221022_the.wav',
-		'241227_s.wav',
-		'bang.wav'
+		'240919_wrrr.ogg',
+		'221022_the.ogg',
+		'241227_s.mp3',
+		'bang.ogg'
 	];
 
 	return greatestHitsPaths

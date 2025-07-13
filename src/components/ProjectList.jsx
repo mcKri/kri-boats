@@ -19,7 +19,7 @@ export default function ProjectList() {
 			link: null,
 			description: "WIP",
 			tracks: [
-				{ src: "roomba/r.wav" }
+				{ src: "roomba/r.ogg" }
 			]
 		},
 		{
@@ -42,7 +42,7 @@ export default function ProjectList() {
 				{ src: "sunfall/lab_present.ogg" },
 				{ src: "sunfall/lab_past.ogg" },
 				{ src: "sunfall/town_past.ogg" },
-				{ src: "sunfall/thing_2.wav" }
+				{ src: "sunfall/thing_2.ogg" }
 			]
 		},
 		{
@@ -55,7 +55,7 @@ export default function ProjectList() {
 			link: null,
 			description: "A solo project I was working on for a while, which I ended up putting on hold. (But I'd like to finish it someday!)\n\nIt's an extremely unfair and irritating driving game, following John \"Drive\" Car, a man on his way out of the apocalypse.",
 			tracks: [
-				{ src: "car/vrr.wav" }
+				{ src: "car/vrr.ogg" }
 			]
 		},
 		{
@@ -64,9 +64,7 @@ export default function ProjectList() {
 			link: "https://store.steampowered.com/app/1848520/Fruit_Salad/",
 			description: "A chill lil' puzzly game some friends asked me to make music for!",
 			tracks: [
-				{ src: "fruit salad/uhh.wav" },
-				{ src: "fruit salad/something.wav" },
-				{ src: "fruit salad/beeps.wav" }
+				{ src: "fruit salad/beeps.ogg" }
 			]
 		},
 		{
@@ -80,14 +78,15 @@ export default function ProjectList() {
 			link: null,
 			description: (
 				<>
-					An idea I like too much to let go of, but requires me to finish my training arc first.
+					An idea I like very very much, and will get back to when I'm ready!
 				</>
 			),
 			tracks: [
-				{ src: "rgb/220920_dink.wav" },
-				{ src: "rgb/220924_boss.flac" },
+				{ src: "rgb/220920_dink.mp3" },
+				{ src: "rgb/220924_boss.mp3" },
 				{ src: "rgb/220824_evil.mp3" },
-				{ src: "rgb/220629_beep.flac" }
+				{ src: "rgb/220629_beep.mp3" },
+				{ src: "rgb/230216_piano.ogg" }
 			]
 		},
 		{
@@ -151,7 +150,7 @@ export default function ProjectList() {
 			link: null,
 			description: null,
 			tracks: [
-				{ src: "moonthly banjo kazooie.wav" }
+				{ src: "moonthly banjo kazooie.ogg" }
 			],
 			hasBreak: true // Special flag for the <br> before content
 		}

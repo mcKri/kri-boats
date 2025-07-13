@@ -1,20 +1,20 @@
 {
-	"240919_wrrr.wav": {
+	"240919_wrrr.ogg": {
 		"description": "",
 		"loop": true,
 		"project": "personal"
 	},
-	"221022_the.wav": {
+	"221022_the.ogg": {
 		"description": "",
 		"loop": true,
 		"project": "personal"
 	},
-	"241227_s.wav": {
+	"241227_s.mp3": {
 		"description": "",
 		"loop": true,
 		"project": "personal"
 	},
-	"bang.wav": {
+	"bang.ogg": {
 		"description": "",
 		"loop": false,
 		"project": "personal"
@@ -24,7 +24,7 @@
 		"loop": true,
 		"project": "personal"
 	},
-	"moonthly banjo kazooie.wav": {
+	"moonthly banjo kazooie.ogg": {
 		"description": "--bango mango--",
 		"loop": true,
 		"project": "personal"
@@ -44,7 +44,7 @@
 		"loop": true,
 		"project": "boulder"
 	},
-	"car/vrr.wav": {
+	"car/vrr.ogg": {
 		"description": "One of the tracks that would play on the car radio.",
 		"loop": true,
 		"project": "car"
@@ -59,7 +59,7 @@
 		"loop": true,
 		"project": "cross-boss"
 	},
-	"fruit salad/beeps.wav": {
+	"fruit salad/beeps.ogg": {
 		"description": "Gameplay music after you cross a certain score and start popping off.",
 		"loop": true,
 		"project": "fruit-salad"
@@ -99,7 +99,7 @@
 		"loop": true,
 		"project": "rgb"
 	},
-	"rgb/220629_beep.flac": {
+	"rgb/220629_beep.mp3": {
 		"description": "--combat music--",
 		"loop": true,
 		"project": "rgb"
@@ -109,17 +109,22 @@
 		"loop": true,
 		"project": "rgb"
 	},
-	"rgb/220920_dink.wav": {
+	"rgb/220920_dink.mp3": {
 		"description": "--shop--",
 		"loop": true,
 		"project": "rgb"
 	},
-	"rgb/220924_boss.flac": {
+	"rgb/220924_boss.mp3": {
 		"description": "--boss fight--",
 		"loop": true,
 		"project": "rgb"
 	},
-	"roomba/r.wav": {
+	"rgb/230216_piano.ogg": {
+		"description": "--first area--",
+		"loop": true,
+		"project": "rgb"
+	},
+	"roomba/r.ogg": {
 		"description": "a music.",
 		"loop": true,
 		"project": "roomba"
@@ -134,7 +139,7 @@
 		"loop": true,
 		"project": "sunfall"
 	},
-	"sunfall/thing_2.wav": {
+	"sunfall/thing_2.ogg": {
 		"description": "(unused track)",
 		"loop": true,
 		"project": "sunfall"
