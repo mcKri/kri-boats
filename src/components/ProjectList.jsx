@@ -20,7 +20,7 @@ export default function ProjectList() {
 			description: "WIP",
 			tracks: [
 				{ src: "roomba/r.ogg" }
-			]
+			],
 		},
 		{
 			title: "Boulder Bash",
@@ -31,7 +31,7 @@ export default function ProjectList() {
 				{ src: "boulder/uh.ogg" },
 				{ src: "boulder/thing3.ogg" },
 				{ src: "boulder/thign2.ogg" }
-			]
+			],
 		},
 		{
 			title: "Sunfall",
@@ -43,7 +43,7 @@ export default function ProjectList() {
 				{ src: "sunfall/lab_past.ogg" },
 				{ src: "sunfall/town_past.ogg" },
 				{ src: "sunfall/thing_2.ogg" }
-			]
+			],
 		},
 		{
 			title: (
@@ -65,7 +65,7 @@ export default function ProjectList() {
 			description: "A chill lil' puzzly game some friends asked me to make music for!",
 			tracks: [
 				{ src: "fruit salad/beeps.ogg" }
-			]
+			],
 		},
 		{
 			title: (
@@ -87,7 +87,7 @@ export default function ProjectList() {
 				{ src: "rgb/220824_evil.mp3" },
 				{ src: "rgb/220629_beep.mp3" },
 				{ src: "rgb/230216_piano.ogg" }
-			]
+			],
 		},
 		{
 			title: (
@@ -124,7 +124,7 @@ export default function ProjectList() {
 				},
 				{ src: "justice realms/green fight.ogg" },
 				{ src: "justice realms/blue fight.ogg" }
-			]
+			],
 		},
 		{
 			title: (

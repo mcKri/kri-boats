@@ -39,7 +39,7 @@ export function getGreatestHits() {
 		'240919_wrrr.ogg',
 		'221022_the.ogg',
 		'241227_s.mp3',
-		'bang.ogg'
+		'rgb/220920_dink.mp3',
 	];
 
 	return greatestHitsPaths
