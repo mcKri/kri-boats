@@ -454,6 +454,17 @@ a:hover {
     /* Center content on mobile */
   }
 
+  /* Center greatest hits content on mobile */
+  .intro>div:last-child .audio-player {
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .intro>div:last-child .audio-player audio {
+    width: 100%;
+    max-width: 250px;
+  }
+
   .intro p {
     font-size: 16px;
     line-height: 1.5;
@@ -502,6 +513,13 @@ a:hover {
     min-width: 280px;
     margin: 10px 5px;
     padding: 15px;
+    width: 300px !important;
+    max-width: 300px !important;
+  }
+
+  .projectContent {
+    grid-template-columns: 300px !important;
+    width: 300px !important;
   }
 
   /* Sticky links mobile adjustments */
@@ -550,6 +568,17 @@ a:hover {
     padding: 20px 15px;
   }
 
+  /* Center greatest hits content on small screens */
+  .intro>div:last-child .audio-player {
+    margin: 8px auto;
+    text-align: center;
+  }
+
+  .intro>div:last-child .audio-player audio {
+    width: 100%;
+    max-width: 220px;
+  }
+
   .intro p {
     font-size: 15px;
   }
@@ -561,6 +590,13 @@ a:hover {
   .project {
     min-width: 260px;
     padding: 12px;
+    width: 280px !important;
+    max-width: 280px !important;
+  }
+
+  .projectContent {
+    grid-template-columns: 280px !important;
+    width: 280px !important;
   }
 
   .link {
